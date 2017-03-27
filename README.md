@@ -1,5 +1,4 @@
-# CS205 2017 Spring Final Projecs 
-## Remote Attestation and Software Stack Verification based on Trusted Platform Module (TPM)
+# CS205 2017 Spring Final Projecs --  Remote Attestation and Software Stack Verification based on Trusted Platform Module (TPM)
 
 ## Group Member:  
 Ronny Ko  
@@ -19,9 +18,7 @@ This way, we know that some unauthorized program was/is running on our computer.
 ## Problem Definition
 
 Suppose we cannot run a task manager because our task manager got compromised by the malicious program. 
-So the only way for us to investigate the identity of the malicious program is by looking at the TPM chip's PCR register value.
-
-Given a list of all known malicious program's binaries and our expected software stack signature, 
+So the only way for us to investigate the identity of the malicious program is by looking at the TPM chip's PCR register value. Given a list of all known malicious program's binaries and our expected software stack signature, 
 we reverse-engineer (i.e. re-compute the recursive SHA1 in a brute-force way for all possibilities) and determine: 
 
 which malicious program(s) were/are running on our compromised computer?
